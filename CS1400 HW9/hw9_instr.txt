@@ -1,0 +1,21 @@
+Requirements:
+Read through Chapter 9 and make the code work -- store it in a file named snowballs_chance.py
+
+it's best if you do it one piece at a time like the chapter shows you how to do
+
+Using that code, 
+Get the code working correctly
+
+Add 3 new features of your own invention:
+	One feature should be a change to the animation in some way, examples of that include: 
+	animate the y coordinate
+	reverse the direction of the animation once the edge is reached
+	also, add some sort of randomness
+	etc.
+
+Add at least two other drawn elements in their own functions (may want to refer to Chapter 5 such as:
+	a tree 
+	a house
+	a car
+	clouds
+	etc.
