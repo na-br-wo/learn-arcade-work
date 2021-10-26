@@ -1,5 +1,11 @@
 import arcade
 
+"""
+Uses the arcade library to draw a house, a tree, a moon, and two snow people.
+
+Animates one of the snowmen so it moves around the screen.
+"""
+
 # Variables for screen size
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -45,6 +51,16 @@ def draw_house():
     arcade.draw_line(695, 235, 695, 265, arcade.color.WHITE, 2)
     arcade.draw_line(680, 250, 710, 250, arcade.color.WHITE, 2)
 
+def draw_moon():
+    """ Drawing a moon"""
+    arcade.draw_circle_filled(95, 500, 75, arcade.color.BONE)
+
+def draw_tree():
+    """ Drawing a tree """
+    # Draw the tree trunk
+    arcade.draw_rectangle_filled(150, 217, 25, 95, arcade.color.DARK_BROWN)
+    # Drawing the pine leaves
+    arcade.draw_triangle_filled(110, 210, 190, 210, 150, 320, arcade.color.PINE_GREEN)
 
 def draw_snow_person(x, y):
     """ Draw a snow person """
@@ -70,9 +86,11 @@ def on_draw(delta_time):
     arcade.start_render()
 
     draw_grass()
+    draw_moon()
+    draw_house()
+    draw_tree()
     draw_snow_person(on_draw.snow_person1_x, 140)
     draw_snow_person(450, 180)
-    draw_house()
 
     # Add one to the x value, making the snow person move right
     # Negative numbers move left. Larger numbers move faster.
@@ -80,7 +98,7 @@ def on_draw(delta_time):
 
 
 # Create a value that our on_draw.snow_person1_x will start at.
-on_draw.snow_person1_x = 150
+on_draw.snow_person1_x = 250
 
 def main():
     # Set up the initial canvas

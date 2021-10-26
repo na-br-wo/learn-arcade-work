@@ -13,7 +13,7 @@ Add 3 new features of your own invention:
 	also, add some sort of randomness
 	etc.
 
-Add at least two other drawn elements in their own functions (may want to refer to Chapter 5) such as:
+!Done Add at least two other drawn elements in their own functions (may want to refer to Chapter 5) such as:
 	a tree 
 	a house
 	a car
