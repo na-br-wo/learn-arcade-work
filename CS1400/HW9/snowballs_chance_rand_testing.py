@@ -27,8 +27,8 @@ def draw_house():
 
     # Draw the roof
     arcade.draw_triangle_filled(565, 308,
-                                 735, 308,
-                                 650, 387, arcade.color.DARK_SLATE_GRAY)
+                                735, 308,
+                                650, 387, arcade.color.DARK_SLATE_GRAY)
 
     # Draw the door; small circle is door knob
     arcade.draw_rectangle_filled(650, 225, 37.5, 75, arcade.color.BURNT_SIENNA)
@@ -54,9 +54,11 @@ def draw_house():
     arcade.draw_line(695, 235, 695, 265, arcade.color.WHITE, 2)
     arcade.draw_line(680, 250, 710, 250, arcade.color.WHITE, 2)
 
+
 def draw_moon():
     """ Drawing a moon"""
     arcade.draw_circle_filled(95, 500, 75, arcade.color.BONE)
+
 
 def draw_tree():
     """ Drawing a tree """
@@ -64,6 +66,7 @@ def draw_tree():
     arcade.draw_rectangle_filled(150, 217, 25, 95, arcade.color.DARK_BROWN)
     # Drawing the pine leaves
     arcade.draw_triangle_filled(110, 210, 190, 210, 150, 320, arcade.color.PINE_GREEN)
+
 
 def draw_snow_person(x, y):
     """ Draw a snow person """
@@ -101,7 +104,12 @@ def on_draw(delta_time):
 
     # Add one to the y value, making the snow person move up
     # Negative numbers move down. Larger numbers move faster
-    on_draw.snow_person1_y += 1
+    on_draw.snow_person1_y += random.randint(-5, 5)
+
+    # Figure out if we hit the dge and need to reverse.
+    if on_draw.snow_person1_x < 120 // 2 \
+            or on_draw.snow_person1_x > SCREEN_WIDTH - 120 // 2:
+        on_draw.snow_person1_x *= -1
 
 
 # Create a value that our on_draw.snow_person1_x will start at.
@@ -120,12 +128,13 @@ def main():
     arcade.start_render()
 
     # Call on_draw every 60th of a second.
-    arcade.schedule(on_draw, 1/60)
+    arcade.schedule(on_draw, 1 / 60)
     arcade.run()
 
     # Finish and run
     arcade.finish_render()
     arcade.run()
+
 
 # Call the main function to get the program started.
 main()
