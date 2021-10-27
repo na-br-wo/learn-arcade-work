@@ -1,0 +1,6 @@
+1. I had trouble with the order of the if and else statements in repeat.py. I thought that I 
+should add the if statement that handles "repeat" first for some reason, and then I didn't know where to put the else statement. So the "nice try" message kept printing in the wrong place.
+
+I also had trouble importing the cur_position value into the input() statement; had to look up the way to use brackets to have a value in the string.
+
+2. I could not figure out how to use the four loop count properly. It counts improper inputs as well as integer inputs from the user, and that uses up the five attempts they have to guess.

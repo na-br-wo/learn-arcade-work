@@ -1,0 +1,7 @@
+1 & 2. I felt intimidated by the variables at first but I realized that it’s not as hard as it seems. I just did a lot of experiments in the shell to make sure I knew what commands did what operations. The algebra is very simple if you can make sure you are assigning variables correctly.
+
+I was initially having trouble after using the input command, because I was not converting the user input into an integer, which was messing up the math equation.   I also forgot to put a ‘*’ operator between my variable and the equation in parentheses, which was giving me an error I could not figure out. It was a simple mistake that was obvious but I was not seeing. 
+
+I also discovered that python has ‘round(_)’ which can limit the number of decimal points. This made the output cleaner.
+
+3. Rather than multiplying the input by the toCm factor, we are dividing. We are using the same factor, just on the denominator to convert. We could multiply  the cm input by (1/2.54) but the way we set up the equation gives the same results. 

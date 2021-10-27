@@ -1,0 +1,10 @@
+1.    For the knock_knock assignment, I had several nested if statements and else statements if any of the “if” statements were false. As I was writing if statements I would include a command: print(‘works’) so that I would get the output ‘works’ if all the if statements up to that point were operating correctly.
+    For the guess assignment, I tested it by choosing random numbers between 1 and 3 to see if the success and failure messages were working correctly. 
+
+2.   I had several frustrating errors due to not having the correct number of spaces in some of my if/else statements. I also went down a rabbit hole and learned
+To use the .upper() to make sure the input command is not case-sensitive. That took a bit of time but it is in our book and was satisfying to implement.  
+
+I also struggled with concatination; chaning the user max_value input into a string for the next input prompt. Needed to assign max_value to a new variable that was a string and used that for my user_choice input.
+
+3.    For the knock-knock joke, I’m not sure if doing it all with if/else statements is the cleanest way. Maybe storing things as variables if the if statements
+Turn out to be true. It is hard to describe things in the docstrings without feeling like my description is confusing.

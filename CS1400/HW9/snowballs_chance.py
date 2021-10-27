@@ -87,7 +87,7 @@ def draw_snow_person(x, y):
     arcade.draw_arc_filled(x, 195 + y, 40, 30, arcade.color.BLACK, 180, 360)
 
 
-def on_draw():
+def on_draw(delta_time):
     """ Draw everything """
     arcade.start_render()
 
@@ -98,22 +98,24 @@ def on_draw():
     draw_snow_person(on_draw.snow_person1_x, on_draw.snow_person1_y)
     draw_snow_person(450, 180)
 
-    # Add one to the x value, making the snow person move right
-    # Negative numbers move left. Larger numbers move faster.
-    on_draw.snow_person1_x += 1
+    # Modify snow-person's position based on the delta vector
+    # Just x so far, y is using random library to "jump"
+    on_draw.snow_person1_x += on_draw.delta_x * delta_time
 
-    # Add one to the y value, making the snow person move up
+    # Add random to the y value, making the snow person move up or down
     # Negative numbers move down. Larger numbers move faster
-    on_draw.snow_person1_y += random.randint(-5, 5)
+    on_draw.snow_person1_y += random.randint(-2, 2)
 
-    # Figure out if we hit the dge and need to reverse.
+    # Figure out if we hit the edge and need to reverse.
     if on_draw.snow_person1_x < 120 // 2 \
             or on_draw.snow_person1_x > SCREEN_WIDTH - 120 // 2:
-        on_draw.snow_person1_x *= -1
+        on_draw.delta_x *= -1
 
 
 # Create a value that our on_draw.snow_person1_x will start at.
+# delta_x is the initial change in x
 on_draw.snow_person1_x = 250
+on_draw.delta_x = 265
 
 # Create a value that our on_draw.snow_person1_y will start at.
 on_draw.snow_person1_y = 140

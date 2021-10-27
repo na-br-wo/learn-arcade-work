@@ -1,0 +1,5 @@
+Experiments: I tried running some print() commands that just listed the required assignment outputs. I initially could not figure out how to add line breaks between the outputs. I also broke the code by having an unmatched ')'.
+
+I looked up a quick YouTube tutorial about doing a multi-line print in python, rather than having three lines with print() for each line that I wanted to display a string.
+
+It requires print(''' <any string> '''). It felt good to find the solution, and in a way it makes sense that you can tell python to allow you to print on multiple lines with a slightly different function input. 

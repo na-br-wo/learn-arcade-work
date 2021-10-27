@@ -98,22 +98,28 @@ def on_draw(delta_time):
     draw_snow_person(on_draw.snow_person1_x, on_draw.snow_person1_y)
     draw_snow_person(450, 180)
 
+    # Modify snow-person's position based on the delta vector
+    # Just x so far, y is random based
+    on_draw.snow_person1_x += on_draw.delta_x * delta_time
+    # on_draw.snow_person1_y += on_draw.delta_y * delta_time
+
     # Add one to the x value, making the snow person move right
     # Negative numbers move left. Larger numbers move faster.
-    on_draw.snow_person1_x += 1
+    #on_draw.snow_person1_x += 1
 
-    # Add one to the y value, making the snow person move up
+    # Add random to the y value, making the snow person move up or down
     # Negative numbers move down. Larger numbers move faster
-    on_draw.snow_person1_y += random.randint(-5, 5)
+    on_draw.snow_person1_y += random.randint(-2, 2)
 
     # Figure out if we hit the dge and need to reverse.
     if on_draw.snow_person1_x < 120 // 2 \
             or on_draw.snow_person1_x > SCREEN_WIDTH - 120 // 2:
-        on_draw.snow_person1_x *= -1
+        on_draw.delta_x *= -1
 
 
 # Create a value that our on_draw.snow_person1_x will start at.
 on_draw.snow_person1_x = 250
+on_draw.delta_x = 265
 
 # Create a value that our on_draw.snow_person1_y will start at.
 on_draw.snow_person1_y = 140
