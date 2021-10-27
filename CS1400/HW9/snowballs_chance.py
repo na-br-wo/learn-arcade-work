@@ -107,6 +107,7 @@ def on_draw(delta_time):
     on_draw.snow_person1_y += random.randint(-2, 2)
 
     # Figure out if we hit the edge and need to reverse.
+    # Only reversing on the x axis
     if on_draw.snow_person1_x < 120 // 2 \
             or on_draw.snow_person1_x > SCREEN_WIDTH - 120 // 2:
         on_draw.delta_x *= -1
