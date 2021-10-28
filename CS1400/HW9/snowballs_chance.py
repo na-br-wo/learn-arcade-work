@@ -4,7 +4,7 @@ import arcade
 import random
 
 """
-Uses the arcade library to draw a house, a tree, a moon, and two snow people.
+Uses the arcade library to draw a house, a tree, a moon, and two snowmen.
 
 Animates one of the snowmen so it moves around the screen.
 """
