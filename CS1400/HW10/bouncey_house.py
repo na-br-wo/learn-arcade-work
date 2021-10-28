@@ -24,6 +24,11 @@ def make_ball():
     """
     ball = Ball()
 
+    # Assign random boolean value to ball.square attributes
+    ball.square = random.choice([True, False])
+    # The code below is used to show the random True/False values are being
+    # assigned to ball.square correctly
+    print(ball.square)
     # Size of the ball
     ball.size = random.randrange(10, 30)
 
@@ -59,8 +64,22 @@ class MyGame(arcade.Window):
         # This command has to happen before we start drawing
         arcade.start_render()
 
+        arcade.set_background_color(arcade.color.DUTCH_WHITE)
+
+        # Code to draw a square if ball.square attribute is true
+        # Why is it not calling ball.square correctly? It works in make.ball
+        # if ball.square == True:
+        #     for ball in self.ball_list:
+        #         arcade.draw_rectangle_filled(ball.x, ball.y, ball.size,
+        #                                      ball.size, ball.color)
+        # else:
+        #     for ball in self.ball_list:
+        #         arcade.draw_circle_filled(ball.x, ball.y, ball.size,
+        #                                   ball.color)
+
         for ball in self.ball_list:
-            arcade.draw_circle_filled(ball.x, ball.y, ball.size, ball.color)
+            arcade.draw_circle_filled(ball.x, ball.y, ball.size,
+                                          ball.color)
 
         # Put the text on the screen.
         output = "Balls: {}".format(len(self.ball_list))

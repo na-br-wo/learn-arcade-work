@@ -6,15 +6,15 @@ Modify the code in these ways
    !done Remove the Ball class from bounce_house.py and put it into Ball.py and then import Ball into bouncey_house.py
    !done Test the code and make sure it still works -- fix it
 
-    Add a new variable to __init__ named square  -- the initial value should be "False"
-    Test again
-    Now, add code to make_ball
-    This code should randomly assign True or False to ball.square
-    Test
+   !done Add a new variable to __init__ named square  -- the initial value should be "False"
+    !done Test again
+   !done Now, add code to make_ball
+          This code should randomly assign True or False to ball.square
+   !done Test
 
 Modify the code in on_draw:
     If ball.square is True, it should draw a square instead of a circle
     Otherwise, it draws a circle (the code that is already there.
     Test
-    Do something else of your own invention.
+   !done -- change background color Do something else of your own invention.
     Test

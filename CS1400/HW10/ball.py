@@ -9,3 +9,4 @@ class Ball:
         self.change_y = 0
         self.size = 0
         self.color = None
+        self.square = False
