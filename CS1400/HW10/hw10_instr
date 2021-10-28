@@ -2,9 +2,9 @@ What to do:
 Download the Bouncing Balls code, save it to a file named bounce_house.py and get it to work
 When you are testing, make sure you click the screen...and click it again, etc.
 Modify the code in these ways
-    Create a separate file named Ball.py
-    Remove the Ball class from bounce_house.py and put it into Ball.py and then import Ball into bouncey_house.py
-    Test the code and make sure it still works -- fix it
+   !done Create a separate file named Ball.py
+   !done Remove the Ball class from bounce_house.py and put it into Ball.py and then import Ball into bouncey_house.py
+   !done Test the code and make sure it still works -- fix it
 
     Add a new variable to __init__ named square  -- the initial value should be "False"
     Test again
