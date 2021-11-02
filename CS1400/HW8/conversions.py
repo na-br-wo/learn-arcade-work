@@ -143,7 +143,7 @@ def process_args(p_args):
         no_param_mode()
         print_args(command_list)
     else:
-        i=1
+        i=0
         for arg in p_args:
             if arg == 's':
                 try:
@@ -176,7 +176,7 @@ def process_args(p_args):
             if arg == 'p':
                 print_args(command_list)
                 
-        i=i+1
+            i=i+1
     
 if __name__ == "__main__":
     process_args(sys.argv)

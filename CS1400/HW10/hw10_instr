@@ -12,7 +12,7 @@ Modify the code in these ways
           This code should randomly assign True or False to ball.square
    !done Test
 
-Modify the code in on_draw:
+!done Modify the code in on_draw:
     If ball.square is True, it should draw a square instead of a circle
     Otherwise, it draws a circle (the code that is already there.
     Test
