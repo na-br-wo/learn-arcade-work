@@ -8,7 +8,7 @@ python -m arcade.examples.bouncing_balls
 
 import arcade
 import random
-from ball import Ball
+from Ball import Ball
 
 # --- Set up the constants
 
