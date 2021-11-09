@@ -1,0 +1,33 @@
+Requirements:
+Download the code from Drawing Shapes with Classes (Links to an external site.) and paste it into a file named shapes.py
+Make sure you can get it to work and you understand what it is doing
+Change the value of NUMBER_OF_SHAPES to something you like better than the current value
+Now, create a new sub-class named Fish
+This will be a sub-class of the Shape class
+All fish may have the same size
+draw() -- it will have its own draw() method to draw the fish
+This will be a very simple fish
+the body -- an ellipse,  plus
+the tail -- a triangle, plus
+a little circle eye (black)
+the body and tail will be the color of a goldfish (orange, of course)
+You need to be able to draw the fish facing left or right, based on the delta_x property
+if delta_x is -1, the fish should face towards the left side
+if delta_x is 1, the fish should face right
+move()
+The fish class will have its own move method
+Fish will only move left and right
+a left-facing fish will move left
+a right-facing fish will move right
+When it gets to the edge of the screen,
+The fish reverses the direction it faces
+MyGame.setup()
+modify the MyGame.setup() method to create 5 separate fish to add to the shape list that are appended to the list of shapes
+to reiterate, all of your fish can be the same size and color
+but the following  things should be randomized
+left or right-facing
+x and y coordinates
+Work out the bugs
+Submit
+shapes.py
+supporting files if needed
