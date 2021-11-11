@@ -100,7 +100,7 @@ class Fish(Shape):
     Fish do not move on the y-axis so the move() function only deals
     with the x-axis
     """
-
+## Change the fish variable, adding super and other things if necessary
     def draw(self):
         if self.delta_x >= 0:
             arcade.draw_ellipse_filled(self.x, self.y, self.width, self.width/2,

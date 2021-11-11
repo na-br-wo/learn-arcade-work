@@ -1,7 +1,9 @@
 Requirements:
+
 Download the code from Drawing Shapes with Classes (Links to an external site.) and paste it into a file named shapes.py
 Make sure you can get it to work and you understand what it is doing
-Change the value of NUMBER_OF_SHAPES to something you like better than the current value
+
+!done Change the value of NUMBER_OF_SHAPES to something you like better than the current value
 Now, create a new sub-class named Fish
 This will be a sub-class of the Shape class
 All fish may have the same size
@@ -28,6 +30,7 @@ but the following  things should be randomized
 left or right-facing
 x and y coordinates
 Work out the bugs
+!!Add docstrings for all copied code other than __init__ and main()
 Submit
 shapes.py
 supporting files if needed
