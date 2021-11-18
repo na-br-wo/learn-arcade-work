@@ -1,0 +1,20 @@
+﻿Begin Homework 12 by downloading the code from the Turn and Move
+sample. 
+Save the sample code to a file and name it tank_jr.py. 
+Make the following changes/updates:
+1. Read ALL of the comments carefully
+2. !done Change the sprite to another vehicle from the arcade resources
+3. !done Change it so a left mouse click does the same thing as a right mouse click
+4. In addition to mouse clicks, add keypad movement  (don't worry about rotation for this part)
+   1. You will need a new property in the Player constructor to tell you whether or not you are in mouse movement
+   2. Up arrow moves the sprite up
+   3. Down arrow moves down
+   4. Left arrow moves left
+   5. Right arrow moves right
+HINTS: if you don't know how,
+1. Go back to the reading assignment for examples of how to move the sprite object
+2. Create small "temp" files to just work on the problem at hand
+3. Solve one problem at a time. If you want to brainstorm, do it in comments, not code
+4. In the myPlayer class, sometimes you are referencing self and sometimes you are referencing self.player_sprite -- seeing that and keeping it straight will help
+Submit:
+tank_jr.py
