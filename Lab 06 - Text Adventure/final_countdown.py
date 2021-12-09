@@ -116,16 +116,16 @@ def main():
 
         # all fallowing if statements take in user input and let them move
         # around the dungeon
-        if player_choice.upper() == 'N' or 'NORTH':
-            next_room = room_list[current_room].north
+        if player_choice.upper() == 'S' or 'SOUTH':
+            next_room = room_list[current_room].south
 
             if next_room == None:
                 print("You can't go that way.")
             else:
                 current_room = next_room
 
-        elif player_choice.upper() == 'S' or 'SOUTH':
-            next_room = room_list[current_room].south
+        elif player_choice.upper() == 'N' or 'NORTH':
+            next_room = room_list[current_room].north
 
             if next_room == None:
                 print("You can't go that way.")

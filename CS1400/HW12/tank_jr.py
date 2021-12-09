@@ -21,7 +21,8 @@ class Player(arcade.Sprite):
     Sprite that turns and moves
     """
     def __init__(self):
-        super().__init__(":resources:images/space_shooter/playerShip1_blue.png")
+        super().__init__(":resources:images/space_shooter/playerShip1_blue.png"
+                         )
 
         # Destination point is where we are going
         self._destination_point = None
